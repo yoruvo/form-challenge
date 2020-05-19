@@ -22,7 +22,14 @@
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
     "format": "prettier --write src/**/*.tsx src/**/*.ts package.json",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run check"
   },
   "devDependencies": {
     "typescript": "3.9.2",
@@ -43,7 +50,8 @@
     "react-app-rewired": "2.1.6",
     "less-loader": "6.1.0",
     "source-map-explorer": "2.4.2",
-    "jest-dom": "4.0.0"
+    "jest-dom": "4.0.0",
+    "gts": "^2.0.2"
   },
   "browserslist": [
     ">0.2%",
