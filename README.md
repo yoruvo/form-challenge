@@ -1,44 +1,62 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Form challenge project
 
-In the project directory, you can run:
+This is a personal project to practice working with React, with a focus on creating forms.
 
-### `yarn start`
+### Challenge outlines
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I will be creating a complete form with conditional fields and extra features using TypeScript.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The challenge follows a very precise definition outlining all the required features.
 
-### `yarn test`
+I will labour to add additional steps which aid in development or demonstrate good coding etiquette, such
+as adding this readme, configuring linting and formatting tools for clean output etc.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Progress on the challenge will be publically displayed in a GitHub repository.
 
-### `yarn build`
+I will begin work on this challenge with the initial knowledge of **very** basic TypeScript and Node.js
+as well as having finished the [Intro to React](https://reactjs.org/tutorial/tutorial.html).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Most other parts of this challenge will be knowledge that I acquire live during coding, using resources
+available on the internet.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Challenge instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a multi-lingual support form supporting English and German.
 
-### `yarn eject`
+There should be a language selection element to switch languages.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The form contains the following fields:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Name / Name (Text field, initially empty)
+* Emailadresse / Email address (Text field, initially empty, validates correct email)
+* Themenbereich / Topic (Select field with options "General request", "Software error" and "Return call") 
+* Beschreibung / Description (Text area)
+* Submit button
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+If topic "Software error" is chosen, display an additional field below the dropdown which receives a version number.
+The version number can be something like `1.0.0` or `1.11.12`. The schema remains `number.number.number`. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+If topic "Return call" is selected, display an additional field which accepts a phone number.
 
-## Learn More
+The form should validate the entered data accordingly.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If the form is submitted, the results should display on a result page.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The results are not saved. All fields are required.
+
+### Technology used
+
+I researched the tech I should use and I will start the project with:
+
+* [**Formik**](https://jaredpalmer.com/formik) for the form fields
+* [**Ant Design**](https://ant.design/) for the frontend UI kit, because I don't want a plain HTML page
+* [**formik-antd**](https://github.com/jannikbuschke/formik-antd) to fuse them together
+
+This list is object to changes during development.
+
+### Time log
+
+#### Tue 2020-05-19
+* **17:55**: Started research + initial setup + README initialization.
