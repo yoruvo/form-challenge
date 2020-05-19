@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [CRA + Ant-Design + X Boilerplate](https://github.com/jannikbuschke/cra-antd-x).
 
 ## Form challenge project
 
@@ -53,10 +53,16 @@ I researched the tech I should use and I will start the project with:
 * [**Formik**](https://jaredpalmer.com/formik) for the form fields
 * [**Ant Design**](https://ant.design/) for the frontend UI kit, because I don't want a plain HTML page
 * [**formik-antd**](https://github.com/jannikbuschke/formik-antd) to fuse them together
+* [**cra-antd-x**](https://github.com/jannikbuschke/cra-antd-x) as boilerplate.
 
 This list is object to changes during development.
 
 ### Time log
 
+The majority of time tracking will be done with commits. I will try to track start & stop times here.
+
+Be advised that this is done in my free time and so, accordingly, time will be spent with other matters than work here and there.
+
 #### Tue 2020-05-19
-* **17:55**: Started research + initial setup + README initialization.
+
+* **17:55**: Project start.

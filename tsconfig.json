@@ -1,9 +1,6 @@
 {
-  "strict": true,
   "compilerOptions": {
-    "target": "es2017",
-    "noImplicitAny": true,
-    "sourceMap": true,
+    "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
@@ -24,9 +21,5 @@
   },
   "include": [
     "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "tests"
   ]
 }
