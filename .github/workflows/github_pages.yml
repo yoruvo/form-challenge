@@ -26,6 +26,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
+        
+    - name: Run Node CI
       run: npm ci
 
     - name: GitHub Pages action
