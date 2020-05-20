@@ -67,3 +67,7 @@ Be advised that this is done in my free time and so, accordingly, time will be s
 
 * **17:55**: Project start.
 * **19:56**: End work, reason: struggling to match ESLint settings with boilerplate. 
+
+#### Wed 2020-05-20
+
+* **22:26**: Return to some project work.

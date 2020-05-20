@@ -1,0 +1,46 @@
+{
+  "en": {
+    "translation": {
+      "english": "English",
+      "german": "German",
+      "form": {
+        "labels": {
+          "name": "Name",
+          "email": "Email address",
+          "topic": "Topic",
+          "description": "Description",
+          "submit": "Submit"
+        },
+        "values": {
+          "general": "General request",
+          "error": "Software error",
+          "call": "Return call",
+          "version": "Version",
+          "phone": "Phone number for the return call"
+        }
+      }
+    }
+  },
+  "de": {
+    "translation": {
+      "english": "Englisch",
+      "german": "Deutsch",
+      "form": {
+        "labels": {
+          "name": "Name",
+          "email": "Emailadresse",
+          "topic": "Themenbereich",
+          "description": "Beschreibung",
+          "submit": "Senden",
+          "version": "Version",
+          "phone": "Telefonnummer für den Rückruf"
+        },
+        "values": {
+          "general": "Allgemeine Anfrage",
+          "error": "Softwarefehler",
+          "call": "Rückruf"
+        }
+      }
+    }
+  }
+}
