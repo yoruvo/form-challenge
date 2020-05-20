@@ -1,5 +1,7 @@
 This project was bootstrapped with [CRA + Ant-Design + X Boilerplate](https://github.com/jannikbuschke/cra-antd-x).
 
+[View the project on GitHub Pages](https://yoruvo.github.io/form-challenge)
+
 ## Form challenge project
 
 This is a personal project to practice working with React, with a focus on creating forms.
@@ -71,3 +73,7 @@ Be advised that this is done in my free time and so, accordingly, time will be s
 #### Wed 2020-05-20
 
 * **22:26**: Return to some project work.
+
+#### Thu 2020-05-21
+
+* **01:20**: Stop work after fiddling with GitHub Pages. Hopefully up when I wake up!
