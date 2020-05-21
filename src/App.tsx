@@ -2,6 +2,7 @@ import * as React from "react"
 import "./App.css"
 import { Formik } from "formik"
 import {
+  ResetButton,
   FormikDebug,
   InputNumber,
   Input,
@@ -9,16 +10,20 @@ import {
   Form,
   Select,
 } from "formik-antd"
+import { Button, Space } from "antd"
 import { useTranslation } from "react-i18next"
 import "./i18next"
 import { Layout, Menu, notification } from "antd"
-import { AntDesignOutlined } from "@ant-design/icons"
 const { Header, Footer, Content } = Layout
 
 const formLayout = {
   labelCol: { span: 8 },
   wrapperCol: { span: 16 },
   style: { display: "grid", gridTemplateColumns: "1fr 1fr" },
+}
+
+const buttonLayout = {
+  wrapperCol: { offset: 8, span: 16 },
 }
 
 function App() {
@@ -89,12 +94,17 @@ function App() {
                     <Input.TextArea name="description" />
                   </Form.Item>
 
-                  <SubmitButton
-                    style={{ marginTop: 10 }}
-                    icon={<AntDesignOutlined />}
-                  >
-                    {t("form.labels.submit")}
-                  </SubmitButton>
+                  <Form.Item name="submit" {...buttonLayout}>
+                    <Space>
+                      <SubmitButton size="large" style={{ marginTop: 10 }}>
+                        {t("form.labels.submit")}
+                      </SubmitButton>
+
+                      <ResetButton size="large" style={{ marginTop: 10 }}>
+                        {t("form.labels.reset")}
+                      </ResetButton>
+                    </Space>
+                  </Form.Item>
                 </div>
 
                 <div style={{ flex: 1, padding: 24 }}>

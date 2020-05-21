@@ -9,14 +9,15 @@
           "email": "Email address",
           "topic": "Topic",
           "description": "Description",
-          "submit": "Submit"
+          "version": "Version",
+          "phone": "Phone number for the return call",
+          "submit": "Submit",
+          "reset": "Reset"
         },
         "values": {
           "general": "General request",
           "error": "Software error",
-          "call": "Return call",
-          "version": "Version",
-          "phone": "Phone number for the return call"
+          "call": "Return call"
         }
       }
     }
@@ -31,9 +32,10 @@
           "email": "Emailadresse",
           "topic": "Themenbereich",
           "description": "Beschreibung",
-          "submit": "Senden",
           "version": "Version",
-          "phone": "Telefonnummer für den Rückruf"
+          "phone": "Telefonnummer für den Rückruf",
+          "submit": "Senden",
+          "reset": "Zurücksetzen"
         },
         "values": {
           "general": "Allgemeine Anfrage",
