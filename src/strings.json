@@ -14,6 +14,13 @@
           "submit": "Submit",
           "reset": "Reset"
         },
+        "validation": {
+          "required": "This field is required.",
+          "emailInvalid": "Please enter a valid email address.",
+          "versionInvalid": "Please enter a valid version number.",
+          "phoneInvalid": "Please enter a valid phone number.",
+          "descriptionLength": "Please enter at least 10 characters."
+        },
         "values": {
           "general": "General request",
           "error": "Software error",
@@ -36,6 +43,13 @@
           "phone": "Telefonnummer für den Rückruf",
           "submit": "Senden",
           "reset": "Zurücksetzen"
+        },
+        "validation": {
+          "required": "Dieses Feld wird benötigt.",
+          "emailInvalid": "Bitte tragen Sie eine gültige Emailadresse ein.",
+          "versionInvalid": "Bitte tragen Sie eine gültige Versionsnummer ein.",
+          "phoneInvalid": "Bitte tragen Sie eine gültige Telefonnummer ein.",
+          "descriptionLength": "Bitte tragen Sie mindestens 10 Zeichen ein."
         },
         "values": {
           "general": "Allgemeine Anfrage",

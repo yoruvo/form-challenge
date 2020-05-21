@@ -56,6 +56,8 @@ I researched the tech I should use and I will start the project with:
 * [**Ant Design**](https://ant.design/) for the frontend UI kit, because I don't want a plain HTML page
 * [**formik-antd**](https://github.com/jannikbuschke/formik-antd) to fuse them together
 * [**cra-antd-x**](https://github.com/jannikbuschke/cra-antd-x) as boilerplate.
+* [**Yup**](https://github.com/jquense/yup) for form validation.
+* [**i18next**](https://www.i18next.com/) for internationalization.
 
 This list is object to changes during development.
 
@@ -77,3 +79,4 @@ Be advised that this is done in my free time and so, accordingly, time will be s
 #### Thu 2020-05-21
 
 * **01:20**: Stop work after fiddling with GitHub Pages. Hopefully up when I wake up!
+* **14:53**: Resume work.

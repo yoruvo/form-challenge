@@ -1,33 +1,15 @@
 import * as React from "react"
 import "./App.css"
-import { Formik } from "formik"
-import {
-  ResetButton,
-  FormikDebug,
-  InputNumber,
-  Input,
-  SubmitButton,
-  Form,
-  Select,
-} from "formik-antd"
-import { Space } from "antd"
 import { useTranslation } from "react-i18next"
 import "./i18next"
-import { Layout, Menu, notification } from "antd"
+import { Layout, Menu } from "antd"
+import SupportForm from "./SupportForm"
+
 const { Header, Footer, Content } = Layout
-
-const formLayout = {
-  labelCol: { span: 8 },
-  wrapperCol: { span: 16 },
-  style: { display: "grid", gridTemplateColumns: "1fr 1fr" },
-}
-
-const buttonLayout = {
-  wrapperCol: { offset: 8, span: 16 },
-}
 
 function App() {
   const { t, i18n } = useTranslation()
+
   return (
     <Layout>
       <Header>
@@ -43,76 +25,7 @@ function App() {
       </Header>
       <Content>
         <div className="my-content">
-          <Formik
-            initialValues={{ topic: "error" }}
-            onSubmit={(values, f) => {
-              notification.info({ message: values.topic })
-              f.setSubmitting(false)
-            }}
-          >
-            {(props) => (
-              <Form {...formLayout}>
-                <div style={{ flex: 1, padding: 24 }}>
-                  <Form.Item name="name" label={t("form.labels.name")}>
-                    <Input name="name" />
-                  </Form.Item>
-
-                  <Form.Item name="email" label={t("form.labels.email")}>
-                    <Input name="email" />
-                  </Form.Item>
-
-                  <Form.Item name="topic" label={t("form.labels.topic")}>
-                    <Select name="topic">
-                      <Select.Option value="general">
-                        {t("form.values.general")}
-                      </Select.Option>
-                      <Select.Option value="error">
-                        {t("form.values.error")}
-                      </Select.Option>
-                      <Select.Option value="call">
-                        {t("form.values.call")}
-                      </Select.Option>
-                    </Select>
-                  </Form.Item>
-
-                  {/* Conditional fields */}
-                  {props.values.topic === "error" && (
-                    <Form.Item name="version" label={t("form.labels.version")}>
-                      <InputNumber name="version" />
-                    </Form.Item>
-                  )}
-                  {props.values.topic === "call" && (
-                    <Form.Item name="phone" label={t("form.labels.phone")}>
-                      <Input name="phone" />
-                    </Form.Item>
-                  )}
-
-                  <Form.Item
-                    name="description"
-                    label={t("form.labels.description")}
-                  >
-                    <Input.TextArea name="description" />
-                  </Form.Item>
-
-                  <Form.Item name="submit" {...buttonLayout}>
-                    <Space>
-                      <SubmitButton size="large" style={{ marginTop: 10 }}>
-                        {t("form.labels.submit")}
-                      </SubmitButton>
-
-                      <ResetButton size="large" style={{ marginTop: 10 }}>
-                        {t("form.labels.reset")}
-                      </ResetButton>
-                    </Space>
-                  </Form.Item>
-                </div>
-
-                <div style={{ flex: 1, padding: 24 }}>
-                  <FormikDebug />
-                </div>
-              </Form>
-            )}
-          </Formik>
+          <SupportForm />
         </div>
       </Content>
       <Footer>Footer</Footer>
