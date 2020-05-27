@@ -16,3 +16,7 @@ code {
   margin: 24px;
   background: white;
 }
+
+.component {
+  padding: 24px;
+}

@@ -67,6 +67,8 @@ The majority of time tracking will be done with commits. I will try to track sta
 
 Be advised that this is done in my free time and so, accordingly, time will be spent with other matters than work here and there.
 
+**Total estimate time logged**: TODO 
+ 
 #### Tue 2020-05-19
 
 * **17:55**: Project start.
@@ -80,3 +82,8 @@ Be advised that this is done in my free time and so, accordingly, time will be s
 
 * **01:20**: Stop work after fiddling with GitHub Pages. Hopefully up when I wake up!
 * **14:53**: Resume work.
+* **19:13**: Ending work for the moment.
+
+#### Wed 2020-05-27
+
+* **10:37**: Resuming work after a longer time off, having taken a holiday to finish this.

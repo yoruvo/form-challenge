@@ -26,6 +26,14 @@
           "error": "Software error",
           "call": "Return call"
         }
+      },
+      "results": {
+        "title": "Submission successful",
+        "thankYou": "Thank you for your submission! Below, you can find your submitted values.",
+        "submission": "Form submission results",
+        "return": "Return to form",
+        "key": "Field",
+        "value": "Entry"
       }
     }
   },
@@ -56,6 +64,14 @@
           "error": "Softwarefehler",
           "call": "Rückruf"
         }
+      },
+      "results": {
+        "title": "Eingabe erfolgreich",
+        "thankYou": "Danke für Ihre Eingabe! Weiter unten finden Sie Ihre eingetragenen Werte.",
+        "submission": "Formulareinträge",
+        "return": "Zurück zum Formular",
+        "key": "Feld",
+        "value": "Eintrag"
       }
     }
   }
