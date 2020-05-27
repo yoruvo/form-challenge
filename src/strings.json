@@ -3,6 +3,7 @@
     "translation": {
       "english": "English",
       "german": "German",
+      "footer": "Written by Ivan \"yoruvo\" Vidusenko. Find this project on <2>GitHub</2>",
       "form": {
         "labels": {
           "name": "Name",
@@ -41,6 +42,7 @@
     "translation": {
       "english": "Englisch",
       "german": "Deutsch",
+      "footer": "Verfasst von Ivan \"yoruvo\" Vidusenko. Finde das Projekt auf <2>GitHub</2>",
       "form": {
         "labels": {
           "name": "Name",
@@ -67,7 +69,7 @@
       },
       "results": {
         "title": "Eingabe erfolgreich",
-        "thankYou": "Danke für Ihre Eingabe! Weiter unten finden Sie Ihre eingetragenen Werte.",
+        "thankYou": "Danke für Ihre Eingabe! Unten finden Sie Ihre eingetragenen Werte.",
         "submission": "Formulareinträge",
         "return": "Zurück zum Formular",
         "key": "Feld",

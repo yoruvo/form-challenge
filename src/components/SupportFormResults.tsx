@@ -1,7 +1,7 @@
 import React from "react"
 import { Button, Table, Typography } from "antd" // Ant Design styling
 import { Link, Redirect } from "react-router-dom"
-import SupportFormValues from "./SupportFormValues"
+import { SupportFormValues } from "./SupportForm"
 import { useTranslation } from "react-i18next"
 
 const { Title, Paragraph } = Typography // Ant Design styling

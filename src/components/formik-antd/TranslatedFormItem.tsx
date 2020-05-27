@@ -1,17 +1,18 @@
 /**
- * Custom Form.Item component override to allow translation.
- *
- * I did so to allow translation of the error messages with react-i18next.
- *
- * Ideally, the form component from formik-antd should allow supplying a
- * translation function for the error output.
+ * THIS IS TAKEN FROM formik-atnd LIBRARY
+ * LINK: https://github.com/jannikbuschke/formik-antd/blob/master/src/form-item/index.tsx
  *
  * Issue opened here: https://github.com/jannikbuschke/formik-antd/issues/144
  *
- * NOTE: This is purely because of the Ant Design-based layer I used
- * for this project. It is not necessary to do so with pure Formik.
- * If your project uses Formik with another library, you can just
- * use the i18next t() function in your custom error output.
+ * I copied this to allow translation of the error messages with react-i18next.
+ *
+ * Ideally, the form component from formik-antd would allow supplying a
+ * translation function for the error output. This isn't the case.
+ *
+ * NOTE: This is needed purely because of the Ant Design-based layer I used
+ * for this project. It is not necessary to do so with pure Formik. If your
+ * project uses Formik with another library, you can just use the i18next
+ * t() function in your custom error output.
  */
 
 import * as React from "react"

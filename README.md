@@ -1,5 +1,3 @@
-This project was bootstrapped with [CRA + Ant-Design + X Boilerplate](https://github.com/jannikbuschke/cra-antd-x).
-
 [View the project on GitHub Pages](https://yoruvo.github.io/form-challenge)
 
 ## Form challenge project
@@ -52,14 +50,23 @@ The results are not saved. All fields are required.
 
 I researched the tech I should use and I will start the project with:
 
-* [**Formik**](https://jaredpalmer.com/formik) for the form fields
-* [**Ant Design**](https://ant.design/) for the frontend UI kit, because I don't want a plain HTML page
-* [**formik-antd**](https://github.com/jannikbuschke/formik-antd) to fuse them together
-* [**cra-antd-x**](https://github.com/jannikbuschke/cra-antd-x) as boilerplate.
+* [**Formik**](https://jaredpalmer.com/formik) for the form fields.
+* [**Ant Design**](https://ant.design/) for the frontend UI kit, because I don't want a plain HTML page.
+* [**formik-antd**](https://github.com/jannikbuschke/formik-antd) to fuse them together.
+* [**cra-antd-x**](https://github.com/jannikbuschke/cra-antd-x) as initial boilerplate project.
 * [**Yup**](https://github.com/jquense/yup) for form validation.
 * [**i18next**](https://www.i18next.com/) for internationalization.
+* [**React Router**](https://github.com/ReactTraining/react-router) for the different pages.
 
 This list is object to changes during development.
+
+### Development notes
+
+Multiple components from the **formik-antd** library had to be copied and modified for the project to avoid
+certain issues with the presentation.
+
+These issues are NOT relevant to general development with Formik, and only exist because of the choice I made in
+using Ant Design as a quick styling helper.
 
 ### Time log
 
