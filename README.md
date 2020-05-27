@@ -53,10 +53,10 @@ I researched the tech I should use and I will start the project with:
 * [**Formik**](https://jaredpalmer.com/formik) for the form fields.
 * [**Ant Design**](https://ant.design/) for the frontend UI kit, because I don't want a plain HTML page.
 * [**formik-antd**](https://github.com/jannikbuschke/formik-antd) to fuse them together.
-* [**cra-antd-x**](https://github.com/jannikbuschke/cra-antd-x) as initial boilerplate project.
 * [**Yup**](https://github.com/jquense/yup) for form validation.
 * [**i18next**](https://www.i18next.com/) for internationalization.
 * [**React Router**](https://github.com/ReactTraining/react-router) for the different pages.
+* [**Webpack**](https://webpack.js.org/) for compilation.
 
 This list is object to changes during development.
 

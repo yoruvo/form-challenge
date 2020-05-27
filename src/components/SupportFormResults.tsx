@@ -1,9 +1,11 @@
 import React from "react"
-import { Button, Table, Typography } from "antd" // Ant Design styling
+
 import { Link, Redirect } from "react-router-dom"
-import { SupportFormValues } from "./SupportForm"
 import { useTranslation } from "react-i18next"
 
+import { SupportFormValues } from "./SupportForm"
+
+import { Button, Table, Typography } from "antd" // Ant Design styling
 const { Title, Paragraph } = Typography // Ant Design styling
 
 interface SupportFormResultsProps {
@@ -15,7 +17,7 @@ const SupportFormResults = (props: SupportFormResultsProps) => {
 
   // If values invalid, return to form.
   if (!props.values || Object.keys(props.values).length === 0) {
-    return <Redirect to="/form-challenge" />
+    return <Redirect to="/" />
   }
 
   // Prepare values for output.
@@ -64,7 +66,7 @@ const SupportFormResults = (props: SupportFormResultsProps) => {
         <Table dataSource={dataSource} columns={columns} pagination={false} />
       </Typography>
       <Button type="primary" style={{ marginTop: 24 }}>
-        <Link to="/form-challenge">{t("results.return")}</Link>
+        <Link to="/">{t("results.return")}</Link>
       </Button>
     </div>
   )

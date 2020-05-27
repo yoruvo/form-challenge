@@ -1,17 +1,19 @@
-import * as React from "react"
-import { Trans, useTranslation } from "react-i18next"
-import "../lib/i18next"
-import { Layout, Menu } from "antd"
-import Content from "./Content"
+import React from "react"
+
 import { BrowserRouter as Router } from "react-router-dom"
 
+import { Trans, useTranslation } from "react-i18next"
+import "../lib/i18next"
+
+import Content from "./Content"
+import { Layout, Menu } from "antd"
 const { Header, Footer } = Layout
 
 function App() {
   const { t, i18n } = useTranslation()
 
   return (
-    <Router basename="/form-challenge">
+    <Router>
       <Layout style={{ minHeight: "100vh", overflow: "auto" }}>
         <Header>
           <div className="logo" />

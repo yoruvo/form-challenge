@@ -1,9 +1,11 @@
 import React from "react"
 import { Route, Switch, useHistory } from "react-router"
+
+import { Layout } from "antd"
+
 import SupportForm, { initialFormValues } from "./SupportForm"
 import SupportFormResults from "./SupportFormResults"
 import { SupportFormValues } from "./SupportForm"
-import { Layout } from "antd"
 
 const Content = () => {
   const [values, setValues] = React.useState<SupportFormValues>(
@@ -14,7 +16,7 @@ const Content = () => {
   return (
     <Layout.Content>
       <Switch>
-        <Route path="/results">
+        <Route exact path="/results">
           <SupportFormResults values={values} />
         </Route>
         <Route>

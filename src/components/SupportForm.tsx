@@ -1,7 +1,7 @@
-import * as React from "react"
+import React from "react"
 
 import { Formik } from "formik"
-import * as Yup from "yup" // Form validation.
+import Yup from "yup" // Form validation.
 import { useTranslation } from "react-i18next"
 
 // Custom formik-antd component replacements. See comment in the file for details.
