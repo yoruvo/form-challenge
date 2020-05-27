@@ -13,7 +13,7 @@ function App() {
   const { t, i18n } = useTranslation()
 
   return (
-    <Router basename={GITHUB_PAGES ? "/form-challenge/" : "/"}>
+    <Router basename={GITHUB_PAGES ? "/form-challenge" : ""}>
       <Layout style={{ minHeight: "100vh", overflow: "auto" }}>
         <Header>
           <div className="logo" />

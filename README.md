@@ -63,12 +63,26 @@ This list is object to changes during development.
 
 ### Development notes
 
-#### Known bugs
+#### Additional topics
+
+I decided to become familiar with additional topics beyond the scope of the task:
+
+* Boilerplate concepts (Create React App vs. custom Webpack setup)
+* Testing for React (Tests are contained in `/src/tests`)
+* Using an existing frontend framework (Ant Design)
+* Deployment to GitHub Pages
+
+etc.
+
+A new alternative to Formik is [React Hook Form](https://react-hook-form.com/), which people are very happy with,
+but I decided to go with Formik on a friend's recommendation for now, to learn one framework at a time.
+
+#### Known issues
 
 * The submit button is initially enabled even though the validation doesn't pass. This is a bug in the
 `formik-antd` library which I've reported [in this issue](https://github.com/jannikbuschke/formik-antd/issues/146).
 
-#### `formik-antd` override components
+##### `formik-antd` override components
 
 Multiple components from the **formik-antd** library had to be copied and modified for the project to avoid
 certain issues with the presentation.
@@ -76,7 +90,7 @@ certain issues with the presentation.
 These issues are NOT relevant to general development with Formik, and only exist because of the choice I made in
 using Ant Design as a quick styling helper.
 
-#### File size
+##### File size
 
 With a basic Webpack setup, Ant Design dependencies create a MASSIVE file size. This can be optimized further,
 but I'm choosing not to pursue this as this project is for learning of React and form basics, not for Ant Design.
@@ -87,7 +101,7 @@ The majority of time tracking will be done with commits. I will try to track sta
 
 Be advised that this is done in my free time and so, accordingly, time will be spent with other matters than work here and there.
 
-**Total estimate time logged**: TODO 
+**Total estimate time logged**: 20 hours 
  
 #### Tue 2020-05-19
 
@@ -107,3 +121,4 @@ Be advised that this is done in my free time and so, accordingly, time will be s
 #### Wed 2020-05-27
 
 * **10:37**: Resuming work after a longer time off, having taken a holiday to finish this.
+* **21:01**: Finalizing project.
