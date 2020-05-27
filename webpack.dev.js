@@ -9,4 +9,8 @@ module.exports = merge(common, {
     contentBase: path.resolve(__dirname, "public"),
     historyApiFallback: true,
   },
+  output: {
+    filename: "[name].[contenthash].js",
+    path: path.resolve(__dirname, "build"),
+  },
 })

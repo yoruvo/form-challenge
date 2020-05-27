@@ -13,7 +13,7 @@ function App() {
   const { t, i18n } = useTranslation()
 
   return (
-    <Router>
+    <Router basename={process.env.GITHUB_ACTIONS ? "/form-challenge" : "/"}>
       <Layout style={{ minHeight: "100vh", overflow: "auto" }}>
         <Header>
           <div className="logo" />
