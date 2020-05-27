@@ -21,7 +21,9 @@
     "sourceMap": true
   },
   "include": [
-    "src"
+    "src",
+    "images.d.ts",
+    "webpack.d.ts"
   ],
   "exclude": [
     "node_modules"

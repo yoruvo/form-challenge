@@ -20,6 +20,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      GITHUB_PAGES: !!process.env.GITHUB_ACTIONS,
+    }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "src/index.html",
