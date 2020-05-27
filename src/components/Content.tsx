@@ -3,14 +3,12 @@ import { Route, Switch, useHistory } from "react-router"
 
 import { Layout } from "antd"
 
-import SupportForm, { initialFormValues } from "./SupportForm"
+import SupportForm, { initialValues } from "./SupportForm"
 import SupportFormResults from "./SupportFormResults"
 import { SupportFormValues } from "./SupportForm"
 
 const Content = () => {
-  const [values, setValues] = React.useState<SupportFormValues>(
-    initialFormValues,
-  )
+  const [values, setValues] = React.useState<SupportFormValues>(initialValues)
   const history = useHistory()
 
   return (
@@ -21,7 +19,7 @@ const Content = () => {
         </Route>
         <Route>
           <SupportForm
-            initialValues={initialFormValues}
+            initialValues={initialValues}
             onSubmit={(v) => {
               setValues(v)
               history.push("/results")

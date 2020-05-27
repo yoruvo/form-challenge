@@ -36,7 +36,7 @@ export interface SupportFormValues {
 // The current version of the software we're supporting. Serves as placeholder.
 const softwareVersion = "1.10.0"
 
-export const initialFormValues = {
+export const initialValues = {
   name: "",
   email: "",
   topic: "error",

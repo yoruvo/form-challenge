@@ -17,10 +17,6 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
-      {
-        test: /\.less$/,
-        use: ["style-loader", "css-loader", "less-loader"],
-      },
     ],
   },
   plugins: [
@@ -30,7 +26,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: [".tsx", ".ts", ".js", ".css", ".less"],
+    extensions: [".tsx", ".ts", ".js", ".css"],
   },
   output: {
     filename: "[name].[contenthash].js",
@@ -39,5 +35,8 @@ module.exports = {
   externals: {
     react: "React",
     "react-dom": "ReactDOM",
+  },
+  optimization: {
+    usedExports: true,
   },
 }

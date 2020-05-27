@@ -56,17 +56,30 @@ I researched the tech I should use and I will start the project with:
 * [**Yup**](https://github.com/jquense/yup) for form validation.
 * [**i18next**](https://www.i18next.com/) for internationalization.
 * [**React Router**](https://github.com/ReactTraining/react-router) for the different pages.
-* [**Webpack**](https://webpack.js.org/) for compilation.
+* [**Webpack**](https://webpack.js.org/) for bundling.
+* [**Jest**](https://jestjs.io/) and [**Enzyme**](https://enzymejs.github.io/enzyme/) for testing.
 
 This list is object to changes during development.
 
 ### Development notes
+
+#### Known bugs
+
+* The submit button is initially enabled even though the validation doesn't pass. This is a bug in the
+`formik-antd` library which I've reported [in this issue](https://github.com/jannikbuschke/formik-antd/issues/146).
+
+#### `formik-antd` override components
 
 Multiple components from the **formik-antd** library had to be copied and modified for the project to avoid
 certain issues with the presentation.
 
 These issues are NOT relevant to general development with Formik, and only exist because of the choice I made in
 using Ant Design as a quick styling helper.
+
+#### File size
+
+With a basic Webpack setup, Ant Design dependencies create a MASSIVE file size. This can be optimized further,
+but I'm choosing not to pursue this as this project is for learning of React and form basics, not for Ant Design.
 
 ### Time log
 
