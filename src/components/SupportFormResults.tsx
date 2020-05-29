@@ -11,13 +11,18 @@ const { Title, Paragraph } = Typography // Ant Design styling
 
 interface SupportFormResultsProps {
   values: SupportFormValues
+  submitted: boolean
 }
 
 const SupportFormResults = (props: SupportFormResultsProps) => {
   const { t } = useTranslation()
 
   // If values invalid, return to form.
-  if (!props.values || Object.keys(props.values).length === 0) {
+  if (
+    !props.submitted ||
+    !props.values ||
+    Object.keys(props.values).length === 0
+  ) {
     return <Redirect to="/" />
   }
 
